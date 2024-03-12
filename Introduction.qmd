@@ -9,9 +9,9 @@ In this document I am sharing my lessons on how to use Github and Rstudio. This 
 ### First step: Installing Git and connecting to my GitHub account
 
 ```{r}
-#| echo: false
+suppressWarnings({
 library(usethis)
-use_git_config(user.name="PinoGS", user.email = "mpinogarsan@gmail.com")
+use_git_config(user.name="PinoGS", user.email = "mpinogarsan@gmail.com")})
 ```
 
 ### Second step: Connecting repositories from your GitHub
