@@ -9,25 +9,33 @@ editor: visual
 ## First step: Connecting to my account
 
 ```{r}
+#| echo: false
 library(usethis)
 use_git_config(user.name="PinoGS", user.email = "mpinogarsan@gmail.com")
 ```
 
-::::{.columns} :::{.column width=50%} ![](https://www.deviantart.com/ethandavis01/art/Beautiful-landscape-in-Japanese-style1-3-977008545) ![](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7de0b457-9ed0-4c17-9ae6-b1b10afa8943/dg5oom9-48ea37dc-66b6-49c8-bd1d-facde2297d9d.jpg/v1/fit/w_828,h_828,q_70,strp/beautiful_landscape_in_japanese_style1_3_by_ethandavis01_dg5oom9-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdkZTBiNDU3LTllZDAtNGMxNy05YWU2LWIxYjEwYWZhODk0M1wvZGc1b29tOS00OGVhMzdkYy02NmI2LTQ5YzgtYmQxZC1mYWNkZTIyOTdkOWQuanBnIiwiaGVpZ2h0IjoiPD0xOTIwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvN2RlMGI0NTctOWVkMC00YzE3LTlhZTYtYjFiMTBhZmE4OTQzXC9ldGhhbmRhdmlzMDEtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.BXJFeUDAKtwqyS3ASumhDZlDmmmex1sxUCSJ_NAcxKY)
+![](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7de0b457-9ed0-4c17-9ae6-b1b10afa8943/dg5oom9-48ea37dc-66b6-49c8-bd1d-facde2297d9d.jpg/v1/fit/w_828,h_828,q_70,strp/beautiful_landscape_in_japanese_style1_3_by_ethandavis01_dg5oom9-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdkZTBiNDU3LTllZDAtNGMxNy05YWU2LWIxYjEwYWZhODk0M1wvZGc1b29tOS00OGVhMzdkYy02NmI2LTQ5YzgtYmQxZC1mYWNkZTIyOTdkOWQuanBnIiwiaGVpZ2h0IjoiPD0xOTIwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvN2RlMGI0NTctOWVkMC00YzE3LTlhZTYtYjFiMTBhZmE4OTQzXC9ldGhhbmRhdmlzMDEtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.BXJFeUDAKtwqyS3ASumhDZlDmmmex1sxUCSJ_NAcxKY)
+
+[Check Adrien's notes from the session:](https://happygitwithr.com/hello-git.html)
+He is an excellent student
 
 ## What is my aim?
 
-Practising to make a presentation using Quarto:
+Make a presentation using Quarto.
+
+To create columns use:
+
+::::{.columns}
+
+:::{.column width=50%}
 
 ```{r}
-1 + 1
+ 
 ```
 
-You can add options to executable code like this
+Result of multiplying 2 per 2
 
 ```{r}
 #| echo: false
 2 * 2
 ```
-
-The `echo: false` option disables the printing of code (only output is displayed).
