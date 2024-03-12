@@ -1,12 +1,12 @@
 ---
-title: "Connecting to GitHub"
+title: "Combining Rstudio and GitHub repositories"
 format: html
 editor: visual
 ---
 
-# Working with GitHub Repositories
+In this document I am sharing my lessons on how to use Github and Rstudio. This can be helpful for anybody who is starting learning about it. Here we go! :)
 
-## First step: Connecting to my account
+### First step: Installing Git and connecting to my GitHub account
 
 ```{r}
 #| echo: false
@@ -14,28 +14,16 @@ library(usethis)
 use_git_config(user.name="PinoGS", user.email = "mpinogarsan@gmail.com")
 ```
 
+### Second step: Connecting repositories from your GitHub
+
+Start a new project \> Select 'Version Control' \> Git Paste the link of your repository Start working from Rstudio and, once you are done, select your docs in "Git" tab, save your commit with a message section and click "Push"
+
+Voilá! Now you should have your updates in your GitHub repository
+
 ![](https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7de0b457-9ed0-4c17-9ae6-b1b10afa8943/dg5oom9-48ea37dc-66b6-49c8-bd1d-facde2297d9d.jpg/v1/fit/w_828,h_828,q_70,strp/beautiful_landscape_in_japanese_style1_3_by_ethandavis01_dg5oom9-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzdkZTBiNDU3LTllZDAtNGMxNy05YWU2LWIxYjEwYWZhODk0M1wvZGc1b29tOS00OGVhMzdkYy02NmI2LTQ5YzgtYmQxZC1mYWNkZTIyOTdkOWQuanBnIiwiaGVpZ2h0IjoiPD0xOTIwIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uud2F0ZXJtYXJrIl0sIndtayI6eyJwYXRoIjoiXC93bVwvN2RlMGI0NTctOWVkMC00YzE3LTlhZTYtYjFiMTBhZmE4OTQzXC9ldGhhbmRhdmlzMDEtNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.BXJFeUDAKtwqyS3ASumhDZlDmmmex1sxUCSJ_NAcxKY)
 
-[Check Adrien's notes from the session:](https://happygitwithr.com/hello-git.html)
-He is an excellent student
+Check [Adrien's notes from the session:](https://happygitwithr.com/hello-git.html) for further instructions. He is an excellent student, and a little bit 'nerdy' :D
 
-## What is my aim?
+### **Other interesting functions from GitHub you should know:**
 
-Make a presentation using Quarto.
-
-To create columns use:
-
-::::{.columns}
-
-:::{.column width=50%}
-
-```{r}
- 
-```
-
-Result of multiplying 2 per 2
-
-```{r}
-#| echo: false
-2 * 2
-```
+**How to 'steal' other's code?** You can copy other's code clicking 'Fork' in Github
